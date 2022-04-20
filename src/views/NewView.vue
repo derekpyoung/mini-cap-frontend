@@ -13,7 +13,7 @@ export default {
   },
   methods: {
     submit: function () {
-      axios.post("/products.json", this.newProductParams)
+      axios.post("https://floating-eyrie-06700.herokuapp.com/products.json", this.newProductParams)
         .then((response) => {
           console.log( response.data);
           this.products.push(response.data);
