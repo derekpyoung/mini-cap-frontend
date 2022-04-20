@@ -3,6 +3,8 @@ import HomeView from '../views/HomeView.vue'
 import IndexView from '../views/HomeView.vue'
 import ShowView from '../views/ShowView.vue'
 import NewView from '../views/NewView.vue'
+import ProductEditView from '../views/ProductEditView.vue'
+import MultiSelectView from '../views/MultiSelectView.vue'
 
 const routes = [
   {
@@ -11,9 +13,19 @@ const routes = [
     component: HomeView
   },
   {
+    path: '/multi',
+    name: 'multi-select',
+    component: MultiSelectView
+  },
+  {
     path: '/products',
     name: 'index',
     component: IndexView
+  },
+  {
+    path: '/product/:id/edit',
+    name: 'product-edit',
+    component: ProductEditView
   },
   {
     path: '/products/:id',

@@ -4,8 +4,8 @@ export default {
   data: function () {
     return {
       products: [],
-      newProductParams: {},
-      newImageParams: {},
+      newProductParams: {}
+    
     };
   },
   created: function () {
@@ -50,8 +50,7 @@ export default {
         Supplier_id:
         <input type="text" v-model="newProductParams.supplier_id" />
         <br>
-        Url:
-        <input type="text" v-model="newImageParams.image" /><br>
+      
         
       </div>
       <input type="submit" value="Submit"> 
