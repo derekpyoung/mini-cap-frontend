@@ -11,7 +11,7 @@
     },
     methods: {
       indexProducts: function () {
-        axios.get("/products.json").then((response) => {
+        axios.get("https://floating-eyrie-06700.herokuapp.com/products.json").then((response) => {
           console.log("products index", response);
           this.products = response.data;
         });
